@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/gowon_back.jpg);
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(11, 226, 11); */
+  position: sticky;
+}
+
+nav img {
+  width: 250px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px 30px;
+  position: relative;
+}
+.nav-links ul a {
+  color: rgb(7, 170, 7);
+  text-decoration: none;
+  font: 30px;
+}
+.nav-links ul a:hover {
+  color: white;
+}
+/* .nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e7007c;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+} */
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.banner-text {
+  width: 50%;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner-text h1 {
+  font-size: 65px;
+  letter-spacing: 4px;
+  color: #e7007c;
+  padding: 0%;
+}
+.banner-text img {
+  width: 200px;
+  border-radius: 70px;
+  padding: 0%;
+}
+.banner-text p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+}
+.banner-text p span {
+  color: #e7007c;
+  font-size: 25px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+nav .fas {
+  display: none;
+}
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(11, 226, 11); */
+    position: relative;
+  }
+  .nav-links ul a {
+    color: white;
+    text-decoration: none;
+    font: 30px;
+  }
+
+  .banner-text h1 {
+    font-size: 20px;
+    font-variant: small-caps;
+  }
+  nav img {
+    width: 100px;
+    padding-top: 10px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .banner-text p {
+    font-size: 15px;
+  }
+  .banner-text p span {
+    font-size: 18px;
+  }
+  .banner-text img {
+    width: 200px;
+    border-radius: 100px;
+    padding: 0%;
+  }
+  .nav-links {
+    position: absolute;
+    background: rgb(7, 170, 7);
+    height: 100vh;
+    width: 200px;
+    top: 0%;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fas {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 35px;
+  }
+}
+.container {
+  padding-top: 20px;
+}
+.welcome-note {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 200px;
+}
+.welcome-note p,
+h4 {
+  color: white;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+.welcome-note .h1w {
+  color: rgb(76, 243, 76);
+  font-size: 80px;
+  font-weight: 600;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+@media (max-width: 900px) {
+  .welcome-note {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 50px;
+  }
+
+  .welcome-note .h1w {
+    color: rgb(76, 243, 76);
+    font-size: 30px;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+  }
+}
+
+/* about */
+.about {
+  padding: 50px 200px;
+  min-height: 100vh;
+  width: 100%;
+}
+.about-us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  /* border: 2px solid rgb(7, 170, 7); */
+  padding: 15px;
+  border-radius: 15px;
+}
+.about-us h1 {
+  font-size: 65px;
+  display: block;
+  font-variant: small-caps;
+  font-weight: 600;
+  color: rgb(76, 243, 76);
+  align-self: center;
+}
+.about-us p {
+  display: block;
+  align-items: center;
+  padding-top: 20px;
+}
+.exec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.card {
+  background: white;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  text-align: center;
+}
+.card h2 {
+  color: rgb(76, 243, 76);
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.card-image {
+  background-color: white;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  background-size: cover;
+}
+.img1 {
+  background-image: url(images/presido.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img2 {
+  background-image: url(images/sec.png);
+  background-position: center;
+  background-size: cover;
+}
+.img3 {
+  background-image: url(images/provost.png);
+  background-position: center;
+  background-size: cover;
+}
+.img4 {
+  background-image: url(images/admin.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card:hover {
+  background-color: rgb(189, 241, 189);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.5s ease;
+}
+.card a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #e7007c;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.5s ease;
+}
+
+/* contact */
+.contact {
+  background-color: rgb(189, 241, 189);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+}
+.contact .email {
+  color: #042a0d;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  text-align: center;
+}
+.contact .email p {
+  padding-top: 10px;
+}
+
+.social-media {
+  text-align: center;
+}
+.contact .email a {
+  text-decoration: none;
+  border: white;
+  background-color: white;
+  color: #042a0d;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+}
+.social-media a .fab,
+.fas {
+  font-size: 20px;
+  color: #042a0d;
+  letter-spacing: 40px;
+  padding-top: 10px;
+}
+.social-media a .fas:hover {
+  color: red;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.social-media a .fab:hover {
+  color: red;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.social-media p {
+  color: #042a0d;
+  padding-top: 10px;
+}
+@media (max-width: 900px) {
+  .social-media a .fab,
+  .fas {
+    font-size: 20px;
+    color: #042a0d;
+    letter-spacing: 20px;
+    padding-top: 30px;
+  }
+}
